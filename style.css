@@ -10,10 +10,10 @@ body {
 	box-sizing: border-box;
 }
 
-.blue-stroke {
+.upper-stroke {
 	width: 100%;
 	height: 7px;
-	background: #39a3f4;
+	background: #333333;
 
 }
 
@@ -66,21 +66,22 @@ input {
 }
 
 input:focus {
-	/* outline: none; */
-	outline-color: #39a3f4c6;
-	border: 0.5px solid #39a3f4b9;
+	outline: none;
+	/* outline-color: #333333; */
+	border: 0.5px solid #000000b9;
 }
 
-.submit-button {
+#submit-button {
 	margin-top: 8px;
 	color: white;
-	background: #54abed;
+	background: #333333;
 	border-radius: 5px;
 	border: none;
 }
 
-.submit-button:hover {
-	background: #39a3f4;
+#submit-button:hover {
+	background: #000000;
+	border: white solid 1px;
 }
 
 .forgot-password-password {
@@ -89,7 +90,7 @@ input:focus {
 }
 
 @media only screen and (min-width: 1000px) {
-	.page-wrapper {
+	#page-wrapper {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		/* height: 100vh; */
@@ -108,10 +109,11 @@ input:focus {
 		background: #f8f9fa;
 	}
 
-	.right-area {
+	#right-area {
 		display: flex;
-		background: #464749;
-		background-image: url("/static/bg.png");
+		/* background: #464749; */
+		/* background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.186)), url("/static/bg1.jpg"); */
+		/* background-color: rgba(6, 6, 6, 0.236); */
 		background-size: cover;
 	}
 
@@ -132,17 +134,17 @@ input:focus {
 }
 
 @media only screen and (max-width: 999px) {
-	.page-wrapper {
+	#page-wrapper {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		height: calc(99% + 2px);
-		background: #464749;
-		background-image: url("/static/bg.png");
+		/* background-image: url("/static/bg3.jpg"); */
 		background-size: cover;
 	}
 
 	.landing-page {
 		display: flex;
+
 	}
 
 	.left-area {
@@ -174,19 +176,18 @@ input:focus {
 	}
 
 	.logo {
-		width: 60px;
-		padding: 0px;
-
+		width: 100px;
+		padding: 20px;
 	}
 
 	.logo-wrapper {
 		background-color: white;
-		width: fit-content;
-		height: fit-content;
+		width: 100px;
+		height: 100px;
 		border-radius: 50%;
 	}
 
-	.right-area {
+	#right-area {
 		display: flex;
 	}
 
