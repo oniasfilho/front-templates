@@ -20,6 +20,7 @@ body {
 .logo {
 	width: 60px;
 	padding: 60px 0;
+	pointer-events: none;
 }
 
 .login-area {
@@ -110,11 +111,8 @@ input:focus {
 	}
 
 	#right-area {
-		display: flex;
-		/* background: #464749; */
-		/* background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.186)), url("/static/bg1.jpg"); */
-		/* background-color: rgba(6, 6, 6, 0.236); */
-		background-size: cover;
+		/* background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.186)), url("/static/bg2-square.jpg");
+		background-size: cover; */
 	}
 
 	.greeting-message-area {
@@ -130,6 +128,11 @@ input:focus {
 		color: rgb(49, 50, 50);
 		margin-top: 60px;
 		margin-bottom: 14px;
+		user-select: none;
+	}
+
+	#greeting-subtitle {
+		user-select: none;
 	}
 }
 
@@ -138,8 +141,8 @@ input:focus {
 		display: grid;
 		grid-template-rows: 1fr 1fr;
 		height: calc(99% + 2px);
-		/* background-image: url("/static/bg3.jpg"); */
-		background-size: cover;
+		/* background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.186)), url("/static/bg2-square.jpg");
+		background-size: cover; */
 	}
 
 	.landing-page {
@@ -152,6 +155,8 @@ input:focus {
 		flex-direction: row;
 		align-items: center;
 		justify-self: center;
+		/* background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.186)), url("/static/bg2-square.jpg");
+		background-size: cover; */
 	}
 
 	.greeting-message-area {
@@ -169,15 +174,19 @@ input:focus {
 		font-size: 70px;
 		margin-top: 60px;
 		margin-bottom: 14px;
+		user-select: none;
 	}
 
 	#greeting-subtitle {
 		display: none;
+		user-select: none;
 	}
 
 	.logo {
 		width: 100px;
 		padding: 20px;
+		user-select: none;
+		pointer-events: none;
 	}
 
 	.logo-wrapper {
@@ -188,7 +197,8 @@ input:focus {
 	}
 
 	#right-area {
-		display: flex;
+		/* display: flex; */
+
 	}
 
 	.login-area {
